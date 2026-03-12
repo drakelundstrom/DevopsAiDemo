@@ -33,7 +33,6 @@ jobs:
             -u ${{ secrets.AZURE_CLIENT_ID }} \
             -p ${{ secrets.AZURE_CLIENT_SECRET }} \
             --tenant ${{ secrets.AZURE_TENANT_ID }}
-          az account set --subscription "${{ vars.AZURE_SUBSCRIPTION_ID }}"
 
       - name: Deploy Bicep
         id: bicep
